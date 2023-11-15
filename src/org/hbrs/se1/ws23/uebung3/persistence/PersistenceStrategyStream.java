@@ -3,7 +3,6 @@ package org.hbrs.se1.ws23.uebung3.persistence;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.*;
-import org.hbrs.se1.ws23.uebung2.*;
 
 // Dieses Aufgabenblatt ist in Teamarbeit von Abel Kabeto (akabet2s)
 // und Muhammad Oso (moso2s) bearbeitet worden.

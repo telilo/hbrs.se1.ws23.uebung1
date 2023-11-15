@@ -1,7 +1,9 @@
-package org.hbrs.se1.ws23.uebung3.persistence;
+package org.hbrs.se1.ws23.uebung3;
 
 // Dieses Aufgabenblatt ist in Teamarbeit von Abel Kabeto (akabet2s)
 // und Muhammad Oso (moso2s) bearbeitet worden.
+
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceStrategyStream;
 
 public class Main {
 

@@ -1,15 +1,17 @@
-package org.hbrs.se1.ws23.uebung3.persistence;
+package org.hbrs.se1.ws23.uebung3;
 import java.util.*;
 
 import org.hbrs.se1.ws23.uebung2.ContainerException;
 import org.hbrs.se1.ws23.uebung2.Member;
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceException;
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceStrategy;
 
 // Dieses Aufgabenblatt ist in Teamarbeit von Abel Kabeto (akabet2s)
 // und Muhammad Oso (moso2s) bearbeitet worden.
 
 public class Container {
     private static Container instance;
-    private List<Member> container = new ArrayList<Member>();
+    private List<Member> container = new ArrayList<>();
     private PersistenceStrategy<Member> persistenceStrategy;
 
     private Container() {}
