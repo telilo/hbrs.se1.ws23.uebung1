@@ -1,26 +1,23 @@
 package org.hbrs.se1.ws23.uebung4.prototype;
-    public class UserStory {
+public class UserStory implements java.io.Serializable, Comparable<UserStory> {
         // ToDo: Sind die Attribute der Klasse UserStory vollständig? (F4)
 
-        String titel;
-        int aufwand = 0;
-        int id = 0;
-        int mehrwert = 0;
-        int risk = 0;
-        int strafe = 0;
-        double prio = 0.0;
-        String project;
+        private String titel;
+        private int aufwand = 0;
+        private int id = 0;
+        private int mehrwert = 0;
+        private int risk = 0;
+        private int strafe = 0;
+        private double prio = 0.0;
+        private String project;
 
         public String getProject() {
-            return project;
+            return this.project;
         }
 
         public void setProject(String project) {
             this.project = project;
         }
-
-
-
 
         public UserStory(int id, String titel, int mehrwert, int strafe,
                          int aufwand, int risk, double prio) {
@@ -37,7 +34,7 @@ package org.hbrs.se1.ws23.uebung4.prototype;
         }
 
         public double getPrio() {
-            return prio;
+            return this.prio;
         }
 
         public void setPrio(double prio) {
@@ -81,5 +78,8 @@ package org.hbrs.se1.ws23.uebung4.prototype;
             this.strafe = strafe;
         }
 
-     }
-
+    @Override
+    public int compareTo(UserStory u) {
+        return u.aufwand;
+    }
+}
